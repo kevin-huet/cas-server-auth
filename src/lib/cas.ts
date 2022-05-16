@@ -3,7 +3,7 @@ import { CasAuth } from './cas.auth';
 
 export class Cas {
   private readonly _axios: AxiosInstance;
-  private _auth: CasAuth;
+  public _auth: CasAuth;
 
   constructor(private _casServerBaseUrl: string, private _redirectUri) {
     this._axios = axios.create({
